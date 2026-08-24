@@ -115,6 +115,7 @@ header p {
     text-decoration: none;
     font-family: Arial, sans-serif;
 }
+
 .language-selector {
     position: absolute;
     top: 20px;
@@ -134,27 +135,4 @@ header p {
 
 .language-selector a:hover {
     opacity: 0.7;
-}
-.flower-options {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.flower-option {
-    text-align: center;
-}
-
-.flower-option img {
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.flower-option img:hover {
-    transform: scale(1.03);
-}
-
-.flower-order {
-    margin-top: 10px;
 }
