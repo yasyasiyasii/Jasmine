@@ -8,7 +8,7 @@ body {
 
 header {
     background: #f3d8dc;
-    padding: 70px 20px;
+    padding: 60px 20px;
 }
 
 h1 {
@@ -18,7 +18,8 @@ h1 {
 }
 
 header p {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 1.5;
 }
 
 .order-button {
@@ -26,10 +27,11 @@ header p {
     background: #9d5367;
     color: white;
     text-decoration: none;
-    padding: 14px 28px;
+    padding: 15px 25px;
     border-radius: 30px;
-    margin-top: 20px;
+    margin: 10px 5px;
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .order-button:hover {
@@ -37,26 +39,27 @@ header p {
 }
 
 .choice-section {
-    padding: 60px 20px;
+    padding: 45px 20px;
 }
 
 .choice-section h2 {
-    font-size: 34px;
+    font-size: 38px;
     color: #7b4050;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .choice-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
 }
 
 .choice-card {
-    width: 280px;
+    width: 85%;
+    max-width: 500px;
     background: white;
-    padding: 25px;
+    padding: 28px 20px;
     border-radius: 20px;
     text-decoration: none;
     color: #4b3a3a;
@@ -69,8 +72,14 @@ header p {
 }
 
 .choice-card h3 {
-    font-size: 25px;
+    font-size: 28px;
     color: #9d5367;
+    margin: 0 0 10px;
+}
+
+.choice-card p {
+    font-size: 18px;
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -84,16 +93,19 @@ header p {
 
 .bouquet {
     background: white;
-    max-width: 700px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto 40px;
     padding: 25px;
     border-radius: 25px;
     box-shadow: 0 5px 20px rgba(100, 50, 60, 0.12);
+    box-sizing: border-box;
 }
 
 .bouquet img {
-    width: 180px;
-    height: 140px;
+    width: 45%;
+    max-width: 280px;
+    height: auto;
     object-fit: cover;
     border-radius: 15px;
     margin: 8px;
@@ -101,10 +113,16 @@ header p {
 
 .bouquet h2 {
     color: #9d5367;
+    font-size: 30px;
+}
+
+.bouquet p {
+    font-size: 19px;
+    line-height: 1.5;
 }
 
 .price {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -114,6 +132,7 @@ header p {
     color: #9d5367;
     text-decoration: none;
     font-family: Arial, sans-serif;
+    font-size: 17px;
 }
 
 .language-selector {
@@ -121,18 +140,113 @@ header p {
     top: 20px;
     right: 25px;
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    z-index: 10;
 }
 
 .language-selector a {
     text-decoration: none;
     color: #333;
     background: white;
-    padding: 8px 14px;
+    padding: 9px 13px;
     border-radius: 20px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .language-selector a:hover {
     opacity: 0.7;
+}
+
+
+/* Flower choices */
+
+.flower-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.flower-option {
+    text-align: center;
+}
+
+.flower-option img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.flower-option img:hover {
+    transform: scale(1.03);
+}
+
+.flower-order {
+    margin-top: 10px;
+}
+
+
+/* Phone / mobile */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 65px 18px 45px;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .choice-section {
+        padding: 40px 15px;
+    }
+
+    .choice-section h2 {
+        font-size: 32px;
+    }
+
+    .choice-card {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .choice-card h3 {
+        font-size: 26px;
+    }
+
+    .choice-card p {
+        font-size: 18px;
+    }
+
+    .bouquet {
+        width: 94%;
+        padding: 18px 12px;
+    }
+
+    .bouquet img {
+        width: 42%;
+        margin: 5px;
+    }
+
+    .language-selector {
+        top: 15px;
+        right: 12px;
+        gap: 6px;
+    }
+
+    .language-selector a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .order-button {
+        font-size: 15px;
+        padding: 13px 19px;
+    }
 }
