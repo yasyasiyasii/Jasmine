@@ -11,16 +11,6 @@ header {
     padding: 60px 20px;
 }
 
-.logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 80px !important;
-    height: auto !important;
-    margin: 0 !important;
-    z-index: 9999;
-}
-
 h1 {
     font-size: 52px;
     color: #7b4050;
@@ -279,4 +269,15 @@ header p {
         padding: 8px 9px;
         font-size: 13px;
     }
+}
+
+.logo {
+    position: fixed !important;
+    top: 10px; !important ;
+    left: 10px; !important;
+    width: 100px !important;
+    height: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
 }
