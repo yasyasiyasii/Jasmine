@@ -12,12 +12,13 @@ header {
 }
 
 .logo {
-    position: absolute;
-    top:  15px;
-    left: 15px;
-    width: 55px;
-    height: auto;
-    z-index:: 20;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 45px !important;
+    height: auto !important;
+    margin: 0 !important;
+    z-index: 9999;
 }
 
 h1 {
