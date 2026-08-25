@@ -11,6 +11,12 @@ header {
     padding: 60px 20px;
 }
 
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 52px;
     color: #7b4050;
