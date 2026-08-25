@@ -12,9 +12,12 @@ header {
 }
 
 .logo {
-    width:20px;
+    position: absolute;
+    top:  15px;
+    left: 15px;
+    width: 55px;
     height: auto;
-    margin-bottom:5px;
+    z-index:: 20;
 }
 
 h1 {
